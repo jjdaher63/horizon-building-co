@@ -14,8 +14,9 @@ const areas = [
   { name: "Los Angeles", href: "/areas/los-angeles" },
   { name: "Santa Monica", href: "/areas/santa-monica" },
   { name: "West Hollywood", href: "/areas/west-hollywood" },
-  { name: "Silver Lake", href: "/areas/silverlake" },
-  { name: "Hollywood Hills", href: "/areas/hollywood-hills" },
+  { name: "Inland Empire", href: "/areas/inland-empire" },
+  { name: "Beverly Hills", href: "/areas/beverly-hills" },
+  { name: "San Fernando Valley", href: "/areas/san-fernando-valley" },
 ];
 
 export default function Footer() {

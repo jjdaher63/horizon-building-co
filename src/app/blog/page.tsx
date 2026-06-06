@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/metadata";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = createMetadata({
   title: "Blog",
@@ -17,6 +18,8 @@ const posts = [
     category: "Guides",
     date: "2026-05-20",
     readTime: "8 min read",
+    image: "/images/blog/blog-adu.jpg",
+    imageAlt: "Modern home with palm trees and landscaped front yard",
   },
   {
     slug: "value-add-multifamily-strategy-southern-california",
@@ -26,6 +29,8 @@ const posts = [
     category: "Investment",
     date: "2026-05-10",
     readTime: "6 min read",
+    image: "/images/blog/blog-multifamily.jpg",
+    imageAlt: "Modern multifamily apartment building exterior",
   },
   {
     slug: "construction-permit-process-los-angeles",
@@ -35,33 +40,41 @@ const posts = [
     category: "Permits",
     date: "2026-04-28",
     readTime: "7 min read",
+    image: "/images/blog/blog-permits.jpg",
+    imageAlt: "Architectural blueprints and construction plans on a table",
   },
   {
-    slug: "design-build-vs-traditional-delivery",
-    title: "Design-Build vs. Traditional Delivery: Which Is Right for Your Project?",
+    slug: "wildfire-resilience-southern-california",
+    title: "Wildfire Resilience in Southern California: Why Material Selection Has Become an Investment Decision",
     excerpt:
-      "Comparing project delivery methods — cost, timeline, risk, and quality considerations for owners and developers.",
+      "How roofing, exterior walls, vents, and landscaping decisions now directly affect insurance costs, property value, and long-term asset performance.",
     category: "Construction",
     date: "2026-04-15",
-    readTime: "5 min read",
+    readTime: "8 min read",
+    image: "/images/blog/blog-wildfire.jpg",
+    imageAlt: "Wildfire burning through trees at night with orange sky",
   },
   {
-    slug: "real-estate-pro-forma-guide",
-    title: "How to Build a Real Estate Pro Forma That Actually Works",
+    slug: "why-construction-projects-go-over-budget",
+    title: "Why Most Construction Projects Go Over Budget",
     excerpt:
-      "The financial modeling approach we use to underwrite acquisitions and developments — key inputs, assumptions, and common mistakes to avoid.",
-    category: "Finance",
+      "Budget overruns rarely come from one catastrophic mistake — they compound from incomplete scope, coordination failures, hidden conditions, and delayed decisions. Here's what to watch for.",
+    category: "Construction",
     date: "2026-04-01",
-    readTime: "9 min read",
+    readTime: "10 min read",
+    image: "/images/blog/blog-over-budget.jpg",
+    imageAlt: "Construction workers on a job site with steel rebar and building materials",
   },
   {
-    slug: "hiring-general-contractor-los-angeles",
-    title: "What to Look for When Hiring a General Contractor in LA",
+    slug: "designing-home-that-ages-gracefully",
+    title: "Designing a Home That Ages Gracefully: Creating a Residence That Serves You for Decades",
     excerpt:
-      "License verification, insurance requirements, reference checks, and red flags — a property owner's guide to contractor selection.",
+      "How to design a custom home in Southern California that remains functional, comfortable, and desirable for decades — from universal design principles to timeless architecture.",
     category: "Guides",
     date: "2026-03-20",
-    readTime: "6 min read",
+    readTime: "9 min read",
+    image: "/images/blog/blog-aging-home.jpg",
+    imageAlt: "Elegant luxury home interior with timeless design and natural light",
   },
 ];
 
@@ -87,8 +100,14 @@ export default function BlogPage() {
                 key={post.slug}
                 className="group rounded-lg border border-gray-700 bg-gray-800/50 overflow-hidden hover:border-gold/30 transition-all"
               >
-                <div className="aspect-[16/9] bg-gray-700 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Article Image</span>
+                <div className="aspect-[16/9] bg-gray-700 relative overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">

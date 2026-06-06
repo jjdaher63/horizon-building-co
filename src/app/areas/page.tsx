@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = createMetadata({
   title: "Service Areas",
   description:
-    "Horizon Building Company serves Los Angeles, Santa Monica, West Hollywood, Silver Lake, Hollywood Hills, and all of Southern California. Licensed general contractor.",
+    "Horizon Building Company serves Los Angeles, Santa Monica, West Hollywood, Beverly Hills, Inland Empire, San Fernando Valley, and all of Southern California. Licensed general contractor.",
   path: "/areas",
 });
 
@@ -28,16 +28,22 @@ const areas = [
       "Mixed-use development, restaurant build-outs, and residential projects in the heart of WeHo.",
   },
   {
-    name: "Silver Lake",
-    slug: "silverlake",
+    name: "Inland Empire",
+    slug: "inland-empire",
     description:
-      "Multifamily development, ADU construction, and renovations in one of LA's most dynamic neighborhoods.",
+      "Ground-up development, commercial construction, and residential projects across Riverside and San Bernardino counties.",
   },
   {
-    name: "Hollywood Hills",
-    slug: "hollywood-hills",
+    name: "Beverly Hills",
+    slug: "beverly-hills",
     description:
-      "Luxury hillside construction, seismic retrofits, and high-end renovations in the Hills.",
+      "High-end residential construction, luxury renovations, and estate remodels in one of LA's most prestigious communities.",
+  },
+  {
+    name: "San Fernando Valley",
+    slug: "san-fernando-valley",
+    description:
+      "Residential and commercial construction, multifamily development, and ADU builds throughout the Valley.",
   },
 ];
 

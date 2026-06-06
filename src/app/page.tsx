@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { createMetadata } from "@/lib/metadata";
+import { projects as allProjects } from "@/lib/projects";
 
 export const metadata = createMetadata({
   title: "Home",
@@ -54,56 +55,7 @@ const services = [
   },
 ];
 
-const projects = [
-  {
-    title: "Outpost Estates",
-    location: "Hollywood Hills, CA",
-    type: "Luxury Renovation",
-    description: "High-end modern residence in the prestigious Hollywood Hills.",
-    image: "/images/outpost-1.webp",
-    alt: "Modern luxury home with wood and white facade in Outpost Estates Hollywood Hills",
-  },
-  {
-    title: "Pearl Street Residence",
-    location: "Santa Monica, CA",
-    type: "Luxury Single-Family",
-    description: "Complete gut renovation with premium finishes throughout.",
-    image: "/images/pearl-st-living.jpg",
-    alt: "Modern open-concept living room with natural light in Pearl Street Santa Monica renovation",
-  },
-  {
-    title: "Doran Townhomes",
-    location: "Los Angeles, CA",
-    type: "Multifamily Development",
-    description: "Ground-up construction of modern townhome community.",
-    image: "/images/doran-1.webp",
-    alt: "Contemporary townhome development with landscaped entrance in Los Angeles",
-  },
-  {
-    title: "Westmount",
-    location: "West Hollywood, CA",
-    type: "Modern Residential",
-    description: "Striking contemporary design with mixed material facade.",
-    image: "/images/westmount-1.webp",
-    alt: "Modern residential building with dark metal and concrete facade in West Hollywood",
-  },
-  {
-    title: "Allesandro Street",
-    location: "Los Angeles, CA",
-    type: "Multifamily Development",
-    description: "Modern multifamily development with balconies and wood accents.",
-    image: "/images/allesandro-1.jpeg",
-    alt: "Modern multifamily apartment building on Allesandro Street Los Angeles",
-  },
-  {
-    title: "Pearl Street Interior",
-    location: "Santa Monica, CA",
-    type: "Interior Renovation",
-    description: "Luxurious bedroom suite with custom built-ins and natural finishes.",
-    image: "/images/pearl-st-bedroom.jpg",
-    alt: "Luxury master bedroom with designer furnishings in Pearl Street Santa Monica home",
-  },
-];
+const homeProjects = allProjects.slice(0, 6);
 
 const stats = [
   { value: "$600M+", label: "Project Experience" },
@@ -129,10 +81,10 @@ export default function HomePage() {
           <p className="text-gold uppercase tracking-[0.3em] text-sm font-medium mb-6">
             Los Angeles General Contractor
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6">
-            Real Estate Development
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight mb-6">
+            Development. Construction.
             <br />
-            <span className="text-gold">&amp; Construction Excellence</span>
+            <span className="text-gold">Owner Representation.</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-4">
             Precision. Performance. Progress.
@@ -243,15 +195,16 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <div
-                key={project.title}
-                className="group rounded-lg border border-gray-700 overflow-hidden bg-white hover:shadow-lg transition-all"
+            {homeProjects.map((project) => (
+              <Link
+                key={project.slug}
+                href={`/projects/${project.slug}`}
+                className="group rounded-lg border border-gray-700 overflow-hidden bg-white hover:shadow-lg hover:border-gold/50 transition-all"
               >
                 <div className="aspect-[4/3] bg-gray-700 relative overflow-hidden">
                   <Image
-                    src={project.image}
-                    alt={project.alt}
+                    src={project.coverImage}
+                    alt={project.coverAlt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -261,13 +214,13 @@ export default function HomePage() {
                   <p className="text-xs text-gold uppercase tracking-wider mb-1">
                     {project.type}
                   </p>
-                  <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
+                  <h3 className="text-lg font-semibold mb-1 group-hover:text-gold transition-colors">{project.title}</h3>
                   <p className="text-sm text-gray-400 mb-2">
                     {project.location}
                   </p>
                   <p className="text-sm text-gray-400">{project.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-12">

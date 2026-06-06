@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { projects } from "@/lib/projects";
 
 const BASE_URL = "https://horizonbldgco.com";
 
@@ -16,8 +17,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "los-angeles",
     "santa-monica",
     "west-hollywood",
-    "silverlake",
-    "hollywood-hills",
+    "inland-empire",
+    "beverly-hills",
+    "san-fernando-valley",
   ];
 
   const staticPages = [
@@ -44,5 +46,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages, ...areaPages];
+  const projectPages = projects.map((p) => ({
+    url: `${BASE_URL}/projects/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  const blogSlugs = [
+    "adu-construction-guide-los-angeles-2026",
+    "value-add-multifamily-strategy-southern-california",
+    "construction-permit-process-los-angeles",
+    "wildfire-resilience-southern-california",
+    "why-construction-projects-go-over-budget",
+    "designing-home-that-ages-gracefully",
+  ];
+
+  const blogPages = blogSlugs.map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...servicePages, ...areaPages, ...projectPages, ...blogPages];
 }

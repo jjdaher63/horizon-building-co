@@ -18,10 +18,10 @@ export function createMetadata({
       ? "Horizon Building Company | General Contractor & Real Estate Developer | Los Angeles, CA"
       : `${title} | Horizon Building Company | Los Angeles`;
   const url = `${BASE_URL}${path}`;
-  const ogImage = image || `${BASE_URL}/images/og-default.jpg`;
+  const ogImage = image || `${BASE_URL}/opengraph-image`;
 
   return {
-    title: fullTitle,
+    title: { absolute: fullTitle },
     description,
     alternates: { canonical: url },
     openGraph: {
