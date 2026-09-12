@@ -11,6 +11,34 @@ export const metadata = createMetadata({
 export default function ValueAddMultifamilyPost() {
   return (
     <article className="py-24 bg-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Value-Add Multifamily Strategy in Southern California",
+            "description": "How experienced operators identify, acquire, and reposition underperforming apartment communities in LA's competitive market. A deeper look at modern value-add investing.",
+            "datePublished": "2026-05-10",
+            "dateModified": "2026-05-10",
+            "url": "https://horizonbldgco.com/blog/value-add-multifamily-strategy-southern-california",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://horizonbldgco.com/blog/value-add-multifamily-strategy-southern-california",
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+          }),
+        }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">

@@ -2,12 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const services = [
+  { name: "Development Advisory", href: "/services/development-advisory" },
+  { name: "Owner Representation", href: "/services/owner-representation" },
   { name: "Construction Management", href: "/services/construction-management" },
-  { name: "Project Management", href: "/services/project-management" },
-  { name: "Design & Development", href: "/services/design-development" },
-  { name: "Real Estate Development", href: "/services/real-estate-development" },
-  { name: "Property Maintenance", href: "/services/property-maintenance" },
-  { name: "Financial Pro Forma", href: "/services/financial-pro-forma" },
+  { name: "General Contracting", href: "/services/general-contracting" },
 ];
 
 const areas = [

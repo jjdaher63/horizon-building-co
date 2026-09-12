@@ -18,7 +18,7 @@ export async function generateMetadata({
   if (!project) return {};
 
   return {
-    title: `${project.title} | ${project.type} | Horizon Building Company`,
+    title: { absolute: `${project.title} | ${project.type} | Horizon Building Company` },
     description: `${project.title} — ${project.type} in ${project.location}. ${project.description} View project photos and details.`,
     openGraph: {
       title: `${project.title} | Horizon Building Company`,

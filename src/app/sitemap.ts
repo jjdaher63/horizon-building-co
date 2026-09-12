@@ -5,12 +5,10 @@ const BASE_URL = "https://horizonbldgco.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const services = [
+    "development-advisory",
+    "owner-representation",
     "construction-management",
-    "project-management",
-    "design-development",
-    "real-estate-development",
-    "property-maintenance",
-    "financial-pro-forma",
+    "general-contracting",
   ];
 
   const areas = [
@@ -54,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const blogSlugs = [
+    "tenant-improvements-los-angeles",
+    "understanding-the-design-phase",
     "adu-construction-guide-los-angeles-2026",
     "value-add-multifamily-strategy-southern-california",
     "construction-permit-process-los-angeles",

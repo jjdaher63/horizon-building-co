@@ -4,52 +4,81 @@ import Link from "next/link";
 export const metadata = createMetadata({
   title: "Services",
   description:
-    "Full-service construction management, project management, design-build, real estate development, property maintenance, and financial pro forma services in Los Angeles. Over $600M in combined project experience.",
+    "Development advisory, owner representation, construction management, and general contracting services across Los Angeles and Southern California. Over $600M in combined project experience.",
   path: "/services",
 });
 
-const services = [
+const categories = [
   {
+    number: "01",
+    title: "Development Advisory",
+    description:
+      "Strategic guidance from site selection through project delivery — helping owners and investors make informed decisions at every stage of the development process.",
+    services: [
+      "Acquisition Due Diligence",
+      "Feasibility Analysis",
+      "Development Budgeting",
+      "Project Planning",
+      "Entitlement Strategy",
+      "Municipal Coordination",
+      "Permit Management",
+      "Design Team Coordination",
+      "Consultant Procurement",
+    ],
+  },
+  {
+    number: "02",
+    title: "Owner Representation",
+    description:
+      "Acting as your eyes and ears on every project — protecting your interests, managing complexity, and ensuring your investment performs as planned.",
+    services: [
+      "Project Oversight",
+      "Budget Monitoring",
+      "Schedule Management",
+      "Construction Draw Review",
+      "Change Order Review",
+      "Contractor Coordination",
+      "Risk Management",
+      "Lender Reporting",
+      "Project Closeout",
+    ],
+  },
+  {
+    number: "03",
     title: "Construction Management",
-    href: "/services/construction-management",
     description:
-      "Comprehensive site supervision, subcontractor coordination, quality control, and budget oversight for commercial and residential construction projects across Los Angeles.",
+      "Institutional-quality construction oversight that keeps projects on time, on budget, and built to the highest standards of quality.",
+    services: [
+      "Preconstruction Planning",
+      "Competitive Bidding",
+      "Value Engineering",
+      "Cost Control",
+      "Procurement Management",
+      "Construction Administration",
+      "Quality Assurance",
+      "Schedule Oversight",
+    ],
   },
   {
-    title: "Project Management",
-    href: "/services/project-management",
+    number: "04",
+    title: "General Contracting",
     description:
-      "End-to-end project oversight including scheduling, budget tracking, vendor coordination, risk management, and transparent reporting from pre-construction through closeout.",
-  },
-  {
-    title: "Design & Development",
-    href: "/services/design-development",
-    description:
-      "Integrated design-build delivery from conceptual design through construction documents, permitting, and execution with a single point of accountability.",
-  },
-  {
-    title: "Real Estate Development",
-    href: "/services/real-estate-development",
-    description:
-      "Ground-up development and value-add repositioning of multifamily, mixed-use, and commercial properties throughout Southern California.",
-  },
-  {
-    title: "Property Maintenance",
-    href: "/services/property-maintenance",
-    description:
-      "Preventive maintenance programs, emergency repairs, tenant improvements, and facility management to protect and enhance your real estate investments.",
-  },
-  {
-    title: "Financial Pro Forma Creation",
-    href: "/services/financial-pro-forma",
-    description:
-      "Institutional-quality financial modeling, acquisition analysis, development pro formas, and investor presentation materials for real estate transactions.",
+      "Licensed general contracting across residential, commercial, and industrial sectors — delivering projects with the precision and accountability of an institutional builder.",
+    services: [
+      "Ground-Up Construction",
+      "Tenant Improvements",
+      "Commercial Construction",
+      "Industrial Construction",
+      "Luxury Residential Construction",
+      "Renovations and Repositioning",
+    ],
   },
 ];
 
 export default function ServicesPage() {
   return (
     <>
+      {/* Header */}
       <section className="py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
@@ -57,7 +86,7 @@ export default function ServicesPage() {
               What We Do
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              Comprehensive Construction &
+              Comprehensive Construction &amp;
               <br />
               <span className="text-gold">Development Services</span>
             </h1>
@@ -70,40 +99,64 @@ export default function ServicesPage() {
             </p>
             <p className="text-gray-400 leading-relaxed">
               From initial feasibility analysis through construction closeout,
-              we provide hands-on ownership involvement at every stage. Whether
-              you need a general contractor to manage your next ground-up build
-              or a development partner to navigate entitlements and deliver a
-              multifamily project, our integrated approach ensures quality,
-              efficiency, and accountability throughout.
+              we provide hands-on principal involvement at every stage — whether
+              you need a development advisor, an owner&apos;s representative, a
+              construction manager, or a licensed general contractor.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Service Categories */}
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="group p-8 rounded-lg border border-gray-700 bg-gray-800/50 hover:border-gold/50 transition-colors"
+          <div className="space-y-6">
+            {categories.map((cat) => (
+              <div
+                key={cat.number}
+                className="group rounded-lg border border-gray-700 bg-gray-900 overflow-hidden hover:border-gold/40 transition-colors"
               >
-                <h2 className="text-xl font-bold mb-3 group-hover:text-gold transition-colors">
-                  {service.title}
-                </h2>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  {service.description}
-                </p>
-                <span className="text-gold text-sm font-medium">
-                  Learn More &rarr;
-                </span>
-              </Link>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-0">
+                  {/* Left — category identity */}
+                  <div className="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-gray-700 flex flex-col justify-between">
+                    <div>
+                      <p className="text-gold/50 text-4xl font-bold mb-4 leading-none">
+                        {cat.number}
+                      </p>
+                      <h2 className="text-2xl font-bold mb-4 group-hover:text-gold transition-colors">
+                        {cat.title}
+                      </h2>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        {cat.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Right — service list */}
+                  <div className="lg:col-span-2 p-8 lg:p-10">
+                    <p className="text-xs text-gold uppercase tracking-widest mb-6">
+                      Services Include
+                    </p>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
+                      {cat.services.map((service) => (
+                        <li
+                          key={service}
+                          className="flex items-center gap-3 text-sm text-gray-300"
+                        >
+                          <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
+                          {service}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-24 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
@@ -132,22 +185,19 @@ export default function ServicesPage() {
             name: "Horizon Building Company",
             url: "https://horizonbldgco.com/services",
             description:
-              "Full-service general contractor and real estate development firm in Los Angeles offering construction management, project management, design-build, real estate development, property maintenance, and financial pro forma services.",
+              "Full-service general contractor and real estate development firm in Los Angeles offering development advisory, owner representation, construction management, and general contracting.",
             telephone: "+1-619-315-1504",
             email: "john@horizonbldgco.com",
-            areaServed: {
-              "@type": "City",
-              name: "Los Angeles",
-            },
+            areaServed: { "@type": "City", name: "Los Angeles" },
             hasOfferCatalog: {
               "@type": "OfferCatalog",
               name: "Construction & Development Services",
-              itemListElement: services.map((s, i) => ({
+              itemListElement: categories.map((cat, i) => ({
                 "@type": "Offer",
                 itemOffered: {
                   "@type": "Service",
-                  name: s.title,
-                  description: s.description,
+                  name: cat.title,
+                  description: cat.description,
                 },
                 position: i + 1,
               })),

@@ -11,6 +11,34 @@ export const metadata = createMetadata({
 export default function WildfireResiliencePost() {
   return (
     <article className="py-24 bg-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Wildfire Resilience in Southern California: Why Material Selection Has Become an Investment Decision",
+            "description": "How roofing, exterior walls, vents, and landscaping decisions affect wildfire resilience, insurance costs, and long-term asset value for Southern California property owners.",
+            "datePublished": "2026-04-15",
+            "dateModified": "2026-04-15",
+            "url": "https://horizonbldgco.com/blog/wildfire-resilience-southern-california",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://horizonbldgco.com/blog/wildfire-resilience-southern-california",
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+          }),
+        }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">

@@ -11,6 +11,34 @@ export const metadata = createMetadata({
 export default function PermitProcessPost() {
   return (
     <article className="py-24 bg-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Navigating the LA Construction Permit Process",
+            "description": "A contractor's guide to permits, plan check, inspections, and certificate of occupancy in the City of Los Angeles. How to avoid common delays and keep your project on schedule.",
+            "datePublished": "2026-04-28",
+            "dateModified": "2026-04-28",
+            "url": "https://horizonbldgco.com/blog/construction-permit-process-los-angeles",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://horizonbldgco.com/blog/construction-permit-process-los-angeles",
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+          }),
+        }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">

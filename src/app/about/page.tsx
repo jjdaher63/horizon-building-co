@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/metadata";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = createMetadata({
   title: "About Us",
@@ -12,18 +13,22 @@ const team = [
   {
     name: "John J. Daher",
     role: "Principal",
-    bio: "John brings extensive construction and real estate development experience, having overseen over $450 million in projects at major firms including Clark Construction. He holds degrees in Civil Engineering and an MBA, combining technical expertise with business acumen to deliver exceptional results for clients across Southern California.",
+    photo: "/images/team/john-daher.jpeg",
+    bio: [
+      "John built his career at Clark Construction, one of the nation's largest general contractors, where he helped deliver large-scale commercial and institutional projects and ultimately oversaw more than $450 million in construction. A civil engineer by training with an MBA, he co-founded Horizon to bring that same rigor — disciplined preconstruction, transparent budgeting, and tight field execution — to private clients and developers across Southern California.",
+      "Today John leads Horizon's construction operations and is personally involved in every project from first estimate through closeout. His work spans luxury residences in the Hollywood Hills and Santa Monica, ground-up multifamily developments, and commercial build-outs — each run with the systems and accountability of an institutional builder and the responsiveness of a hands-on principal.",
+    ],
     credentials: ["B.S. Civil Engineering", "MBA", "CA Contractor License"],
   },
   {
     name: "William W. Daher",
     role: "Principal",
-    bio: "William is a project management specialist with over $150 million in multifamily and commercial development execution across Southern California. He holds degrees in Civil Engineering and an MBA, along with a California Real Estate Broker license, providing a unique blend of construction and real estate expertise.",
-    credentials: [
-      "B.S. Civil Engineering",
-      "MBA",
-      "CA Real Estate Broker License",
+    photo: "/images/team/william-daher.jpeg",
+    bio: [
+      "William began his career at Clark Construction and has since directed more than $150 million in multifamily and commercial development execution across Southern California, managing projects from design and entitlement through construction and delivery. He holds a civil engineering degree and an MBA, a combination that lets him evaluate every decision through both a builder's and an investor's lens.",
+      "At Horizon, William leads project management and development advisory, guiding owners through feasibility, budgeting, entitlements, and construction oversight. That dual construction-and-real-estate perspective anchors Horizon's owner representation practice, where clients count on him to protect their interests and their returns at every phase of a project.",
     ],
+    credentials: ["B.S. Civil Engineering", "MBA"],
   },
 ];
 
@@ -102,16 +107,27 @@ export default function AboutPage() {
                 key={member.name}
                 className="p-8 rounded-lg border border-gray-700 bg-gray-800/50"
               >
-                <div className="w-20 h-20 rounded-full bg-gray-700 mb-6 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-gold">
-                    {member.name.split(" ").map((n) => n[0]).join("")}
-                  </span>
+                <div className="w-20 h-20 rounded-full mb-6 overflow-hidden relative">
+                  <Image
+                    src={member.photo}
+                    alt={`${member.name}, ${member.role} at Horizon Building Company`}
+                    fill
+                    sizes="80px"
+                    className="object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                 <p className="text-gold text-sm mb-4">{member.role}</p>
-                <p className="text-gray-400 leading-relaxed mb-4">
-                  {member.bio}
-                </p>
+                <div className="space-y-4 mb-4">
+                  {member.bio.map((paragraph) => (
+                    <p
+                      key={paragraph.slice(0, 40)}
+                      className="text-gray-400 leading-relaxed"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {member.credentials.map((cred) => (
                     <span

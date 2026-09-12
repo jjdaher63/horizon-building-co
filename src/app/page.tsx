@@ -19,39 +19,25 @@ const services = [
     icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
   },
   {
-    title: "Project Management",
+    title: "General Contracting",
     description:
-      "Rigorous scheduling, budgeting, and coordination ensuring your project delivers on time and on budget.",
-    href: "/services/project-management",
+      "Full-service general contracting for ground-up construction, tenant improvements, and complex renovation projects.",
+    href: "/services/general-contracting",
+    icon: "M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z",
+  },
+  {
+    title: "Owner Representation",
+    description:
+      "Rigorous scheduling, budgeting, and coordination — protecting your interests throughout every phase of the project.",
+    href: "/services/owner-representation",
     icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4",
   },
   {
-    title: "Design & Development",
+    title: "Development Advisory",
     description:
-      "Innovative architectural design and development solutions tailored to maximize your property's potential.",
-    href: "/services/design-development",
-    icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
-  },
-  {
-    title: "Real Estate Development",
-    description:
-      "Ground-up development of multifamily, mixed-use, and commercial projects across Southern California.",
-    href: "/services/real-estate-development",
-    icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z",
-  },
-  {
-    title: "Property Maintenance",
-    description:
-      "Comprehensive facility management and maintenance programs to preserve and enhance your real estate assets.",
-    href: "/services/property-maintenance",
-    icon: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
-  },
-  {
-    title: "Financial Pro Forma",
-    description:
-      "Detailed financial modeling and investment analysis for acquisitions, developments, and value-add strategies.",
-    href: "/services/financial-pro-forma",
-    icon: "M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z",
+      "Ground-up development and investment analysis for multifamily, mixed-use, and commercial projects across Southern California.",
+    href: "/services/development-advisory",
+    icon: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
   },
 ];
 
@@ -61,7 +47,7 @@ const stats = [
   { value: "$600M+", label: "Project Experience" },
   { value: "15+", label: "Years Combined Experience" },
   { value: "100+", label: "Projects Completed" },
-  { value: "6", label: "Service Disciplines" },
+  { value: "4", label: "Service Disciplines" },
 ];
 
 export default function HomePage() {
@@ -177,6 +163,91 @@ export default function HomePage() {
             >
               Explore All Services &rarr;
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve Section */}
+      <section className="py-24 bg-gray-900 border-t border-gray-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-gold uppercase tracking-wider text-sm font-medium mb-3">
+              Who We Serve
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold">
+              Built for Those Who Build Wealth
+            </h2>
+            <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+              We partner with a broad range of clients across the real estate
+              and development spectrum — from first-time developers to
+              institutional owners.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
+            {[
+              {
+                label: "Developers",
+                icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+                description: "Ground-up & value-add projects",
+              },
+              {
+                label: "Real Estate Investors",
+                icon: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
+                description: "Acquisition to disposition support",
+              },
+              {
+                label: "Family Offices",
+                icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+                description: "Discreet, institutional-level execution",
+              },
+              {
+                label: "Private Owners",
+                icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
+                description: "Custom homes & renovations",
+              },
+              {
+                label: "Business Owners",
+                icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
+                description: "Commercial build-outs & tenant improvements",
+              },
+              {
+                label: "Luxury Residential Clients",
+                icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
+                description: "High-end custom construction",
+              },
+              {
+                label: "Institutional Owners",
+                icon: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z",
+                description: "Portfolio-scale asset management",
+              },
+            ].map((client) => (
+              <div
+                key={client.label}
+                className="group flex flex-col items-center text-center p-6 rounded-lg border border-gray-700 bg-gray-800/40 hover:border-gold/40 hover:bg-gray-800/70 transition-all w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-56"
+              >
+                <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                  <svg
+                    className="w-6 h-6 text-gold"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d={client.icon}
+                    />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-sm sm:text-base mb-1 group-hover:text-gold transition-colors">
+                  {client.label}
+                </h3>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  {client.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

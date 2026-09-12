@@ -11,6 +11,28 @@ export const metadata = createMetadata({
 
 const posts = [
   {
+    slug: "tenant-improvements-los-angeles",
+    title: "Tenant Improvements in Los Angeles: Planning Your Commercial Build-Out",
+    excerpt:
+      "For business owners planning a tenant improvement in LA, answering the right questions early prevents expensive surprises. A guide to evaluating a space, designing around your operations, and choosing the right contractor.",
+    category: "Construction",
+    date: "2026-09-12",
+    readTime: "10 min read",
+    image: "/images/blog/blog-tenant-improvement.jpg",
+    imageAlt: "Empty modern commercial space with polished concrete floors ready for tenant improvement build-out in Los Angeles",
+  },
+  {
+    slug: "understanding-the-design-phase",
+    title: "Understanding the Design Phase: The Journey from Concept to Construction",
+    excerpt:
+      "Construction may be the most visible part of a project, but design is where it's truly created. Why the decisions made before the first permit determine a project's success.",
+    category: "Construction",
+    date: "2026-06-12",
+    readTime: "6 min read",
+    image: "/images/blog/blog-design-phase.jpg",
+    imageAlt: "Architect drafting a detailed construction drawing with a scale ruler and rolled plans on a wood desk",
+  },
+  {
     slug: "adu-construction-guide-los-angeles-2026",
     title: "The Complete Guide to ADU Construction in Los Angeles (2026)",
     excerpt:

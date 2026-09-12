@@ -11,6 +11,34 @@ export const metadata = createMetadata({
 export default function ADUBlogPost() {
   return (
     <article className="py-24 bg-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "The Complete Guide to ADU Construction in Los Angeles (2026)",
+            "description": "Everything you need to know about building an ADU in Los Angeles — costs, permits, timelines, design options, and new 2026 state legislation. Expert guide from a licensed LA contractor.",
+            "datePublished": "2026-05-20",
+            "dateModified": "2026-05-20",
+            "url": "https://horizonbldgco.com/blog/adu-construction-guide-los-angeles-2026",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://horizonbldgco.com/blog/adu-construction-guide-los-angeles-2026",
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Horizon Building Company",
+              "url": "https://horizonbldgco.com",
+            },
+          }),
+        }}
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">

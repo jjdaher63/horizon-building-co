@@ -10,34 +10,44 @@ export const metadata = createMetadata({
 
 const included = [
   {
-    title: "Site Supervision & Oversight",
+    title: "Preconstruction Planning",
     description:
-      "Full-time on-site superintendence ensuring work proceeds according to plans, specifications, and schedule. Our principals maintain direct involvement throughout construction.",
+      "Early-stage planning including project scoping, phasing strategy, logistics coordination, and constructability review. We identify and resolve issues before they reach the field — saving time and money throughout construction.",
   },
   {
-    title: "Subcontractor Management",
+    title: "Competitive Bidding",
     description:
-      "Rigorous qualification, procurement, and coordination of trade subcontractors. We manage RFPs, scope leveling, contract negotiation, and day-to-day performance oversight.",
+      "Structured bid processes with qualified subcontractors — including RFP development, scope leveling, bid analysis, and contract negotiation. We drive competitive pricing without sacrificing quality or accountability.",
   },
   {
-    title: "Quality Control & Assurance",
+    title: "Value Engineering",
     description:
-      "Comprehensive QA/QC programs including inspection protocols, material testing coordination, punch list management, and compliance verification against project specifications.",
+      "Systematic analysis of design and specification alternatives to achieve project objectives at reduced cost. We identify savings opportunities without compromising performance, aesthetics, or long-term value.",
   },
   {
-    title: "Schedule Management",
+    title: "Cost Control",
     description:
-      "Detailed CPM scheduling with regular updates, look-ahead planning, milestone tracking, and proactive delay mitigation to keep your project on time.",
+      "Real-time cost tracking, change order management, contingency analysis, and monthly cost reports. We maintain full budget transparency so you always know exactly where your project stands financially.",
   },
   {
-    title: "Safety Program Administration",
+    title: "Procurement Management",
     description:
-      "OSHA-compliant safety programs, toolbox talks, incident prevention planning, and site-specific safety protocols tailored to your project conditions.",
+      "Strategic procurement of long-lead materials, equipment, and specialty subcontractors to protect the project schedule. We manage logistics, submittals, and delivery coordination from early procurement through installation.",
   },
   {
-    title: "Budget & Cost Control",
+    title: "Construction Administration",
     description:
-      "Real-time cost tracking, change order management, monthly cost reports, forecast updates, and value engineering recommendations to protect your investment.",
+      "Full-scope field oversight including subcontractor coordination, RFI management, submittal review, inspection scheduling, and day-to-day site management throughout the construction phase.",
+  },
+  {
+    title: "Quality Assurance",
+    description:
+      "Comprehensive QA programs including inspection protocols, material testing coordination, punch list management, and compliance verification against project plans and specifications.",
+  },
+  {
+    title: "Schedule Oversight",
+    description:
+      "Detailed CPM scheduling with regular updates, look-ahead planning, milestone tracking, and proactive delay mitigation. We protect your schedule and your carrying costs from groundbreaking through certificate of occupancy.",
   },
 ];
 

@@ -65,15 +65,28 @@ export const jsonLd = {
       { "@type": "City", name: "West Hollywood" },
       { "@type": "City", name: "Silver Lake" },
       { "@type": "City", name: "Hollywood Hills" },
+      { "@type": "City", name: "Beverly Hills" },
+      { "@type": "City", name: "Inland Empire" },
+      { "@type": "City", name: "San Fernando Valley" },
     ],
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
       credentialCategory: "Contractor License",
+      identifier: {
+        "@type": "PropertyValue",
+        name: "CSLB License Number",
+        value: "01118216",
+      },
       recognizedBy: {
         "@type": "Organization",
         name: "California Contractors State License Board",
       },
     },
+    sameAs: [
+      // Add social/directory profile URLs here, e.g.:
+      // "https://www.linkedin.com/company/horizon-building-company",
+      // "https://www.instagram.com/horizonbldgco",
+    ],
     founder: [
       { "@type": "Person", name: "John J. Daher", jobTitle: "Principal" },
       { "@type": "Person", name: "William W. Daher", jobTitle: "Principal" },
