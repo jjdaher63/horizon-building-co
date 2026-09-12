@@ -151,8 +151,10 @@ export const projects: Project[] = [
     coverAlt: "Mediterranean-inspired restaurant patio with arched stone alcoves and ambient lighting",
     photos: [
       { src: "/images/projects/laya/1.webp", alt: "Laya Restaurant outdoor dining patio with stone arches" },
-      { src: "/images/projects/laya/2.jpeg", alt: "Laya Restaurant ambient dining area" },
-      { src: "/images/projects/laya/3.jpeg", alt: "Laya Restaurant interior detail" },
+      { src: "/images/projects/laya/2.jpg", alt: "Laya Restaurant entrance with illuminated signage at night" },
+      { src: "/images/projects/laya/3.jpg", alt: "Laya Restaurant arched stone banquette dining alcoves" },
+      { src: "/images/projects/laya/4.jpg", alt: "Laya Restaurant courtyard entrance with string lights and archway trellis" },
+      { src: "/images/projects/laya/5.jpg", alt: "Laya Restaurant bar and lounge patio at night" },
     ],
   },
 ];
