@@ -73,10 +73,18 @@ export const projects: Project[] = [
     ],
     coverImage: "/images/projects/doran/1.webp",
     coverAlt: "Contemporary townhome development with landscaped entrance in Los Angeles",
-    photos: Array.from({ length: 2 }, (_, i) => ({
-      src: `/images/projects/doran/${i + 1}.webp`,
-      alt: `Doran Townhomes development — photo ${i + 1}`,
-    })),
+    photos: [
+      { src: "/images/projects/doran/1.webp", alt: "Doran Townhomes exterior elevation with landscaped entrance" },
+      { src: "/images/projects/doran/2.jpg", alt: "Doran Townhomes entrance with wood-clad door and courtyard gate" },
+      { src: "/images/projects/doran/3.jpg", alt: "Doran Townhomes courtyard walkway between townhome units" },
+      { src: "/images/projects/doran/4.jpg", alt: "Doran Townhomes unit entrance along the shared courtyard" },
+      { src: "/images/projects/doran/5.jpg", alt: "Doran Townhomes kitchen with quartz countertops and stainless appliances" },
+      { src: "/images/projects/doran/6.jpg", alt: "Doran Townhomes open-concept kitchen and living area with staircase" },
+      { src: "/images/projects/doran/7.jpg", alt: "Doran Townhomes bedroom with wide-plank hardwood flooring" },
+      { src: "/images/projects/doran/8.jpg", alt: "Doran Townhomes bedroom corner window with city views" },
+      { src: "/images/projects/doran/9.jpg", alt: "Doran Townhomes primary bedroom with walk-in closet and en-suite bath" },
+      { src: "/images/projects/doran/10.jpg", alt: "Doran Townhomes stairwell window with landscaped view" },
+    ],
   },
   {
     slug: "westmount",
