@@ -50,7 +50,7 @@ export default function LosAngelesPage() {
               full-scale estate renovations.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
-              As a licensed builder in Los Angeles (CA License #01118216), we
+              As a licensed builder in Los Angeles (CA License #1118216), we
               understand the permitting landscape, seismic requirements, Title 24
               energy compliance, and neighborhood-specific design guidelines that
               shape every project in this city. Whether you are planning a

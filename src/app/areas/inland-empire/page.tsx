@@ -49,7 +49,7 @@ export default function InlandEmpirePage() {
               occupancy.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
-              As a California licensed contractor (CA License #01118216), we
+              As a California licensed contractor (CA License #1118216), we
               understand the local building departments, inspection processes, and
               code requirements specific to Inland Empire jurisdictions. Our
               established relationships with local subcontractors and suppliers

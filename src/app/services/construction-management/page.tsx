@@ -55,7 +55,7 @@ const reasons = [
   "Over $600M in combined construction management experience across institutional, commercial, and residential projects",
   "Principals previously managed projects at Clark Construction, one of the nation's largest general contractors",
   "Hands-on ownership involvement on every project ensures accountability and rapid decision-making",
-  "Licensed California general contractor (#01118216) with deep knowledge of local codes, permitting, and inspection requirements",
+  "Licensed California general contractor (#1118216) with deep knowledge of local codes, permitting, and inspection requirements",
   "Transparent communication with weekly reporting, open-book accounting, and real-time budget visibility",
   "Proven track record delivering projects on schedule and within budget across Los Angeles and Southern California",
 ];

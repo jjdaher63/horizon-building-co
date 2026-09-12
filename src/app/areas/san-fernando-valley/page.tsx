@@ -49,7 +49,7 @@ export default function SanFernandoValleyPage() {
               the Valley.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
-              As a California licensed contractor (CA License #01118216), we
+              As a California licensed contractor (CA License #1118216), we
               understand the LADBS permitting process, specific plan areas, and
               hillside construction requirements that apply to many Valley
               properties. Our team manages every phase from initial design

@@ -36,7 +36,7 @@ export default function Footer() {
               insured.
             </p>
             <p className="text-gray-400 text-sm">
-              CA Contractor License #01118216
+              CA Contractor License #1118216
             </p>
           </div>
 

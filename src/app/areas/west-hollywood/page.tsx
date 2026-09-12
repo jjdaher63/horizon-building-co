@@ -61,7 +61,7 @@ export default function WestHollywoodPage() {
               the aesthetic expectations of this design-forward community.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Horizon Building Company (CA License #01118216) partners with
+              Horizon Building Company (CA License #1118216) partners with
               architects, designers, and business owners throughout WeHo to turn
               ambitious concepts into built reality, on time and on budget.
             </p>

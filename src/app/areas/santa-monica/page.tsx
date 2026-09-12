@@ -59,7 +59,7 @@ export default function SantaMonicaPage() {
               ordinance compliance, and maintains clean, organized job sites that
               respect your neighbors and community. Whether you are planning a
               kitchen remodel in Santa Monica or a ground-up custom home, our
-              licensed team (CA #01118216) handles every detail from architectural
+              licensed team (CA #1118216) handles every detail from architectural
               coordination through final punch list.
             </p>
           </div>

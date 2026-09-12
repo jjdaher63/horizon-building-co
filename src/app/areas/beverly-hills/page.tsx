@@ -48,7 +48,7 @@ export default function BeverlyHillsPage() {
             <p className="text-gray-400 leading-relaxed mb-6">
               Beverly Hills has specific permitting requirements, design review
               processes, and construction regulations that differ from the City of
-              Los Angeles. As a California licensed contractor (CA License #01118216),
+              Los Angeles. As a California licensed contractor (CA License #1118216),
               we navigate these requirements efficiently, managing everything from
               initial planning approvals through final inspections. Our experience
               with the Beverly Hills Building & Safety Department ensures smooth

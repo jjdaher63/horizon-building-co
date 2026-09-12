@@ -75,7 +75,7 @@ export const jsonLd = {
       identifier: {
         "@type": "PropertyValue",
         name: "CSLB License Number",
-        value: "01118216",
+        value: "1118216",
       },
       recognizedBy: {
         "@type": "Organization",
