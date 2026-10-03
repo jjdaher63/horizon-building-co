@@ -13,6 +13,32 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "bienveneda-estate",
+    title: "Bienveneda Estate Restoration",
+    location: "Pacific Palisades, CA",
+    type: "Fire Restoration",
+    description: "Major fire restoration of a 6,000 SF Country French Traditional estate in a gated Palisades community.",
+    longDescription:
+      "A major fire restoration of a 6,000 square foot Country French Traditional residence in a gated Pacific Palisades community. The project returned a classic estate to its original character, restoring the architecture, interior finishes, and refined detailing that define the Country French style. Horizon managed the work from assessment and budgeting through reconstruction and closeout, bringing institutional-level preconstruction and field execution to a complex, high-stakes restoration.",
+    highlights: [
+      "Major fire restoration",
+      "6,000 SF Country French Traditional residence",
+      "Gated Pacific Palisades community",
+      "Classic architectural detailing preserved",
+      "Full interior and exterior restoration",
+    ],
+    coverImage: "/images/projects/bienveneda/1.jpg",
+    coverAlt: "Country French Traditional brick estate with ivy and arched garage in Pacific Palisades",
+    photos: [
+      { src: "/images/projects/bienveneda/1.jpg", alt: "Bienveneda Estate Country French Traditional brick facade in Pacific Palisades" },
+      { src: "/images/projects/bienveneda/2.jpg", alt: "Aerial view of Bienveneda Estate restoration in a gated Pacific Palisades community" },
+      { src: "/images/projects/bienveneda/3.jpg", alt: "Bienveneda Estate restored kitchen with custom cabinetry and hardwood floors" },
+      { src: "/images/projects/bienveneda/4.jpg", alt: "Bienveneda Estate restored bedroom with French-style windows" },
+      { src: "/images/projects/bienveneda/5.jpg", alt: "Bienveneda Estate primary suite with French doors, balcony access, and fireplace" },
+      { src: "/images/projects/bienveneda/6.jpg", alt: "Bienveneda Estate upper landing with turned-baluster railing and chandelier" },
+    ],
+  },
+  {
     slug: "outpost-estates",
     title: "Outpost Estates",
     location: "Hollywood Hills, CA",
