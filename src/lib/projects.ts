@@ -32,7 +32,9 @@ export const projects: Project[] = [
     photos: [
       { src: "/images/projects/bienveneda/1.jpg", alt: "Bienveneda Estate Country French Traditional brick facade in Pacific Palisades" },
       { src: "/images/projects/bienveneda/2.jpg", alt: "Aerial view of Bienveneda Estate restoration in a gated Pacific Palisades community" },
+      { src: "/images/projects/bienveneda/8.jpg", alt: "Bienveneda Estate rear pool, spa, and terrace at dusk" },
       { src: "/images/projects/bienveneda/3.jpg", alt: "Bienveneda Estate restored kitchen with custom cabinetry and hardwood floors" },
+      { src: "/images/projects/bienveneda/7.jpg", alt: "Bienveneda Estate family room with French doors opening to the pool" },
       { src: "/images/projects/bienveneda/4.jpg", alt: "Bienveneda Estate restored bedroom with French-style windows" },
       { src: "/images/projects/bienveneda/5.jpg", alt: "Bienveneda Estate primary suite with French doors, balcony access, and fireplace" },
       { src: "/images/projects/bienveneda/6.jpg", alt: "Bienveneda Estate upper landing with turned-baluster railing and chandelier" },
