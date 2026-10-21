@@ -12,6 +12,7 @@ const categories = [
   {
     number: "01",
     title: "Development Advisory",
+    href: "/services/development-advisory",
     description:
       "Strategic guidance from site selection through project delivery — helping owners and investors make informed decisions at every stage of the development process.",
     services: [
@@ -29,6 +30,7 @@ const categories = [
   {
     number: "02",
     title: "Owner Representation",
+    href: "/services/owner-representation",
     description:
       "Acting as your eyes and ears on every project — protecting your interests, managing complexity, and ensuring your investment performs as planned.",
     services: [
@@ -46,6 +48,7 @@ const categories = [
   {
     number: "03",
     title: "Construction Management",
+    href: "/services/construction-management",
     description:
       "Institutional-quality construction oversight that keeps projects on time, on budget, and built to the highest standards of quality.",
     services: [
@@ -62,6 +65,7 @@ const categories = [
   {
     number: "04",
     title: "General Contracting",
+    href: "/services/general-contracting",
     description:
       "Licensed general contracting across residential, commercial, and industrial sectors — delivering projects with the precision and accountability of an institutional builder.",
     services: [
@@ -123,12 +127,25 @@ export default function ServicesPage() {
                       <p className="text-gold/50 text-4xl font-bold mb-4 leading-none">
                         {cat.number}
                       </p>
-                      <h2 className="text-2xl font-bold mb-4 group-hover:text-gold transition-colors">
-                        {cat.title}
-                      </h2>
+                      <Link href={cat.href}>
+                        <h2 className="text-2xl font-bold mb-4 group-hover:text-gold transition-colors hover:text-gold">
+                          {cat.title}
+                        </h2>
+                      </Link>
                       <p className="text-gray-400 text-sm leading-relaxed">
                         {cat.description}
                       </p>
+                    </div>
+                    <div className="mt-6">
+                      <Link
+                        href={cat.href}
+                        className="inline-flex items-center gap-2 text-sm text-gold hover:text-gold-light font-medium transition-colors"
+                      >
+                        Learn More
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
                     </div>
                   </div>
 

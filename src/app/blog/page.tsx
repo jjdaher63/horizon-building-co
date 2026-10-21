@@ -19,7 +19,7 @@ const posts = [
     date: "2026-10-20",
     readTime: "8 min read",
     image: "/images/blog/blog-aging-home.jpg",
-    imageAlt: "Elegant luxury home interior with high-end finishes in Los Angeles",
+    imageAlt: "French country estate with ivy-covered stone facade and dormer windows",
   },
   {
     slug: "tenant-improvements-los-angeles",
@@ -52,7 +52,7 @@ const posts = [
     date: "2026-05-20",
     readTime: "8 min read",
     image: "/images/blog/blog-adu.jpg",
-    imageAlt: "Modern home with palm trees and landscaped front yard",
+    imageAlt: "Spanish colonial arcade with terracotta arches and bougainvillea in Los Angeles",
   },
   {
     slug: "value-add-multifamily-strategy-southern-california",
@@ -74,7 +74,7 @@ const posts = [
     date: "2026-04-28",
     readTime: "7 min read",
     image: "/images/blog/blog-permits.jpg",
-    imageAlt: "Architectural blueprints and construction plans on a table",
+    imageAlt: "Luxury home with stone cladding and wood-paneled soffit at golden hour",
   },
   {
     slug: "wildfire-resilience-southern-california",
@@ -96,7 +96,7 @@ const posts = [
     date: "2026-04-01",
     readTime: "10 min read",
     image: "/images/blog/blog-over-budget.jpg",
-    imageAlt: "Construction workers on a job site with steel rebar and building materials",
+    imageAlt: "Luxury white Mediterranean estate with arched colonnade and ornate wrought iron balconies at golden hour",
   },
   {
     slug: "designing-home-that-ages-gracefully",
@@ -107,7 +107,7 @@ const posts = [
     date: "2026-03-20",
     readTime: "9 min read",
     image: "/images/blog/blog-aging-home.jpg",
-    imageAlt: "Elegant luxury home interior with timeless design and natural light",
+    imageAlt: "French country estate with ivy-covered stone facade and dormer windows in the countryside",
   },
 ];
 

@@ -69,22 +69,26 @@ export default function LosAngelesPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Construction Management",
-              "Design-Build",
-              "Custom Home Construction",
-              "Whole-Home Remodeling",
-              "Commercial Tenant Improvements",
-              "Multifamily Development",
-              "ADU Construction",
-              "Seismic Retrofitting",
-              "Kitchen & Bath Renovation",
+              { label: "Construction Management", href: "/services/construction-management" },
+              { label: "General Contracting", href: "/services/general-contracting" },
+              { label: "Luxury Residential Construction", href: "/services/general-contracting/luxury-residential" },
+              { label: "Custom Home Construction", href: "/services/general-contracting/luxury-residential" },
+              { label: "Tenant Improvements", href: "/services/general-contracting" },
+              { label: "Multifamily Development", href: "/services/development-advisory" },
+              { label: "ADU Construction", href: "/services/general-contracting/luxury-residential" },
+              { label: "Owner Representation", href: "/services/owner-representation" },
+              { label: "Development Advisory", href: "/services/development-advisory" },
             ].map((service) => (
-              <div
-                key={service}
-                className="p-6 rounded-lg border border-gray-700 bg-gray-800/50"
+              <Link
+                key={service.label}
+                href={service.href}
+                className="group p-6 rounded-lg border border-gray-700 bg-gray-800/50 hover:border-gold/50 hover:bg-gray-800 transition-all"
               >
-                <p className="font-medium">{service}</p>
-              </div>
+                <p className="font-medium group-hover:text-gold transition-colors">{service.label}</p>
+                <p className="text-xs text-gold mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  Learn more →
+                </p>
+              </Link>
             ))}
           </div>
         </div>
