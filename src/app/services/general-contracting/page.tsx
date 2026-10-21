@@ -2,9 +2,9 @@ import { createMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata = createMetadata({
-  title: "General Contracting",
+  title: "Luxury Residential & Commercial General Contractor",
   description:
-    "Licensed general contracting in Los Angeles — ground-up construction, tenant improvements, commercial construction, industrial construction, luxury residential, and renovations across Southern California.",
+    "Horizon Building Company is a licensed general contractor in Los Angeles specializing in luxury residential construction, ground-up commercial builds, tenant improvements, and renovations across Southern California. $600M+ in combined project experience.",
   path: "/services/general-contracting",
 });
 
@@ -76,7 +76,11 @@ export default function GeneralContractingPage() {
               leading firms, applying over $600 million in combined project
               experience directly to every build. Whether you are constructing a
               new commercial building, repositioning an existing asset, or
-              building a custom home, Horizon delivers with precision.
+              building a{" "}
+              <Link href="/services/general-contracting/luxury-residential" className="text-gold hover:text-gold-light">
+                custom luxury home
+              </Link>
+              , Horizon delivers with precision.
             </p>
             <p className="text-gray-400 leading-relaxed">
               We believe general contracting should be transparent, proactive, and

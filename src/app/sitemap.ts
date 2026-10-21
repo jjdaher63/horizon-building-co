@@ -11,6 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "general-contracting",
   ];
 
+  const luxuryResidentialPage = {
+    url: `${BASE_URL}/services/general-contracting/luxury-residential`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  };
+
   const areas = [
     "los-angeles",
     "santa-monica",
@@ -52,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const blogSlugs = [
+    "luxury-residential-home-contractor-los-angeles",
     "tenant-improvements-los-angeles",
     "understanding-the-design-phase",
     "adu-construction-guide-los-angeles-2026",
@@ -69,5 +77,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...areaPages, ...projectPages, ...blogPages];
+  return [...staticPages, ...servicePages, luxuryResidentialPage, ...areaPages, ...projectPages, ...blogPages];
 }

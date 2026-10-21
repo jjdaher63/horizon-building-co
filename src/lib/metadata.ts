@@ -83,9 +83,10 @@ export const jsonLd = {
       },
     },
     sameAs: [
-      // Add social/directory profile URLs here, e.g.:
-      // "https://www.linkedin.com/company/horizon-building-company",
-      // "https://www.instagram.com/horizonbldgco",
+      "https://www.instagram.com/horizonbldgco",
+      // Add LinkedIn company page URL once created
+      // Add Google Business Profile URL once verified
+      // Add Houzz profile URL once created
     ],
     founder: [
       { "@type": "Person", name: "John J. Daher", jobTitle: "Principal" },

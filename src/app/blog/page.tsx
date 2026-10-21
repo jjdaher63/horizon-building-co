@@ -11,6 +11,17 @@ export const metadata = createMetadata({
 
 const posts = [
   {
+    slug: "luxury-residential-home-contractor-los-angeles",
+    title: "Luxury Home General Contractor in Los Angeles: How to Choose the Right Builder",
+    excerpt:
+      "Choosing a luxury home general contractor in Los Angeles means evaluating more than price. A guide to vetting builders, understanding institutional-quality construction, and what to ask before you sign.",
+    category: "Guides",
+    date: "2026-10-20",
+    readTime: "8 min read",
+    image: "/images/blog/blog-aging-home.jpg",
+    imageAlt: "Elegant luxury home interior with high-end finishes in Los Angeles",
+  },
+  {
     slug: "tenant-improvements-los-angeles",
     title: "Tenant Improvements in Los Angeles: Planning Your Commercial Build-Out",
     excerpt:

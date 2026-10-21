@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata = createMetadata({
-  title: "General Contractor Los Angeles",
+  title: "General Contractor in Los Angeles",
   description:
     "Horizon Building Company is a full-service general contractor in Los Angeles offering construction management, design-build, remodeling, and real estate development across Downtown, Westside, Mid-City, South LA, and the Valley.",
   path: "/areas/los-angeles",

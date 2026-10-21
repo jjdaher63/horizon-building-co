@@ -189,65 +189,67 @@ export default function HomePage() {
                 label: "Developers",
                 icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
                 description: "Ground-up & value-add projects",
+                href: "",
               },
               {
                 label: "Real Estate Investors",
                 icon: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
                 description: "Acquisition to disposition support",
+                href: "",
               },
               {
                 label: "Family Offices",
                 icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
                 description: "Discreet, institutional-level execution",
+                href: "",
               },
               {
                 label: "Private Owners",
                 icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
                 description: "Custom homes & renovations",
+                href: "",
               },
               {
                 label: "Business Owners",
                 icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
                 description: "Commercial build-outs & tenant improvements",
+                href: "",
               },
               {
                 label: "Luxury Residential Clients",
                 icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
                 description: "High-end custom construction",
+                href: "/services/general-contracting/luxury-residential",
               },
               {
                 label: "Institutional Owners",
                 icon: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z",
                 description: "Portfolio-scale asset management",
+                href: "",
               },
-            ].map((client) => (
-              <div
-                key={client.label}
-                className="group flex flex-col items-center text-center p-6 rounded-lg border border-gray-700 bg-gray-800/40 hover:border-gold/40 hover:bg-gray-800/70 transition-all w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-56"
-              >
-                <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
-                  <svg
-                    className="w-6 h-6 text-gold"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d={client.icon}
-                    />
-                  </svg>
-                </div>
-                <h3 className="font-semibold text-sm sm:text-base mb-1 group-hover:text-gold transition-colors">
-                  {client.label}
-                </h3>
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  {client.description}
-                </p>
-              </div>
-            ))}
+            ].map((client) => {
+              const tileClass = "group flex flex-col items-center text-center p-6 rounded-lg border border-gray-700 bg-gray-800/40 hover:border-gold/40 hover:bg-gray-800/70 transition-all w-[calc(50%-8px)] sm:w-[calc(33.333%-11px)] lg:w-56";
+              const inner = (
+                <>
+                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                    <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={client.icon} />
+                    </svg>
+                  </div>
+                  <h3 className="font-semibold text-sm sm:text-base mb-1 group-hover:text-gold transition-colors">
+                    {client.label}
+                  </h3>
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    {client.description}
+                  </p>
+                </>
+              );
+              return client.href ? (
+                <Link key={client.label} href={client.href} className={tileClass}>{inner}</Link>
+              ) : (
+                <div key={client.label} className={tileClass}>{inner}</div>
+              );
+            })}
           </div>
         </div>
       </section>
